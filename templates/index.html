@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Creatine</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+        th { background-color: #f4f4f4; }
+        .visible { color: green; font-weight: bold; }
+        .hidden { color: red; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Creatine</h1>
+    {% if variants %}
+    <table>
+        <tr>
+            <th>Brand</th>
+            <th>Weight</th>
+            <th>Price</th>
+            <th>SKU</th>
+            <th>Status</th>
+            <th>€/100g</th> <!-- 🆕 Added this column -->
+        </tr>
+        {% for variant in variants %}
+        <tr>
+            <td>{{ variant.brand }}</td>
+            <td>{{ variant.weight }}</td>
+            <td>€{{ variant.price }}</td>
+            <td>{{ variant.sku }}</td>
+            <td class="{{ 'visible' if variant.status == 'Visible' else 'hidden' }}">
+                {{ variant.status }}
+            </td>
+            <td>
+                {% if variant.price_per_100g %}
+                    €{{ variant.price_per_100g }}
+                {% else %}
+                    –
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+        <p>No variants found or CSV not generated yet.</p>
+    {% endif %}
+</body>
+</html>
