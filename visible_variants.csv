@@ -1,0 +1,15 @@
+brand,weight,price,sku,status,matched_text,price_per_100g
+Myprotein,100g,45.99,10530051,Visible,100g,45.99
+Myprotein,250g,14.99,10530053,Visible,250g,6.0
+Myprotein,500g,24.99,10530054,Visible,500g,5.0
+Bulk,100g,5.99,BPB-CMON-0000-0100-EU,Visible,100g,5.99
+Bulk,200g,8.99,BPB-CMON-0000-0200-EU,Visible,200g,4.5
+Bulk,500g,19.99,BPB-CMON-0000-0500-EU,Visible,500g,4.0
+Bulk,3g,34.99,BPB-CMON-0000-1000-EU,Visible,3g,1166.33
+Bulk,4g,19.99,BPB-CMON-ALIM-0500-EU,Visible,4g,499.75
+Bulk,6g,34.99,BPB-CMON-ALIM-1000-EU,Visible,6g,583.17
+Bulk,4g,19.99,BPB-CMON-BRAS-0500-EU,Visible,4g,499.75
+Bulk,3g,34.99,BPB-CMON-BRAS-1000-EU,Visible,3g,1166.33
+CN Supplements,1000g,37.99,8720985682627,Visible,1000g,3.8
+CN Supplements,400g,21.99,8720985600201,Visible,400g,5.5
+CN Supplements,100g,8.99,8720985600492,Visible,100g,8.99
